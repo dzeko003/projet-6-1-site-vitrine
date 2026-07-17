@@ -729,3 +729,55 @@ h4 {
 .g-item:hover .tag {
   opacity: 1;
 }
+
+/* Faq */
+
+.faq {
+  border-top: 1px solid var(--hair);
+}
+.faq details {
+  border-bottom: 1px solid var(--hair);
+}
+.faq summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 0;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.faq .plus {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--hair);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+.faq .plus i {
+  font-size: 13px;
+  color: var(--ink);
+  transition: color 0.3s ease;
+}
+.faq details[open] .plus {
+  transform: rotate(135deg);
+  border-color: var(--blue);
+}
+.faq details[open] .plus i {
+  color: var(--blue);
+}
+.faq p {
+  padding-bottom: 26px;
+  color: var(--muted);
+  max-width: 60ch;
+  font-size: 0.98rem;
+}
