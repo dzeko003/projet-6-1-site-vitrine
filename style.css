@@ -1290,6 +1290,10 @@ footer {
     --gutter: 22px;
   }
 
+  .btn-grad {
+    display: none;
+  }
+
   .header-row {
     padding: 16px 0;
   }
